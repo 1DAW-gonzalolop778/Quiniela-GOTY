@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.bloque {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.titulo-juego {
+    font-weight: bold;
+}
+
+.bloque {
+    margin-bottom: 40px;
+    border: 2px solid #333;
+    padding: 15px;
+}
+
+.fila-nombres,
+.fila-fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.fila-fotos .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    /* por si no hay foto */
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.poster {
+    width: 120px;
+    height: 180px;
+    /* por si no hay foto */
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #aaa;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+/* Estilizar radios como cuadrados grandes */
+input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    -webkit-appearance: none;
+    /* quitar estilo por defecto */
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #555;
+    border-radius: 5px;
+    /* cuadrado con bordes ligeramente redondeados */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+/* Hover para feedback */
+input[type="radio"]:hover {
+    border-color: #555;
+}
+
+/* Tick dentro cuando está seleccionado */
+input[type="radio"]:checked {
+    background-color: #555;
+    border-color: #555;
+}
+
+/* Usamos ::after para mostrar el tick */
+input[type="radio"]:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qui {
+    background-color: #aaa;
+    border-radius: 30px;
+    padding: 1px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 30px;
+}
